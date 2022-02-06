@@ -82,8 +82,8 @@ const companies: Company[] = [
 
 const Home: NextPage = () => {
   return (
-    <main className="min-h-screen space-y-10 sm:space-y-20 bg-indigo-50">
-      <section className="py-10 h-1/2 bg-gradient-to-tr from-indigo-600 to-indigo-700">
+    <main className="min-h-screen space-y-10 transition-colors sm:space-y-20 bg-indigo-50 dark:bg-indigo-900">
+      <section className="py-10 space-y-20 h-1/2 bg-gradient-to-tr from-indigo-600 to-indigo-700">
         <Header></Header>
         <section className="container flex flex-col mx-auto text-white sm:mt-10 sm:flex-row justify-evenly">
           <div className="mt-10 space-y-2 mobile-margin sm:w-1/2 sm:mt-28">
@@ -101,7 +101,7 @@ const Home: NextPage = () => {
         </section>
       </section>
       <section className="container flex flex-col pb-10 mx-auto space-y-16">
-        <h1 className="text-4xl text-indigo-600 sm:text-5xl mobile-margin">
+        <h1 className="text-4xl text-indigo-600 dark:text-white sm:text-5xl mobile-margin">
           Açık Pozisyonlar
         </h1>
         <div className="grid gap-12 sm:grid-cols-4 mobile-margin">
