@@ -82,27 +82,29 @@ const companies: Company[] = [
 
 const Home: NextPage = () => {
   return (
-    <main className="min-h-screen space-y-20 bg-indigo-50">
+    <main className="min-h-screen space-y-10 sm:space-y-20 bg-indigo-50">
       <section className="py-10 h-1/2 bg-gradient-to-tr from-indigo-600 to-indigo-700">
         <Header></Header>
-        <section className="container flex flex-col mx-auto mt-10 text-white sm:flex-row justify-evenly">
-          <div className="w-1/2 space-y-2 mt-28">
-            <h1 className="text-5xl font-medium">
+        <section className="container flex flex-col mx-auto text-white sm:mt-10 sm:flex-row justify-evenly">
+          <div className="mt-10 space-y-2 mobile-margin sm:w-1/2 sm:mt-28">
+            <h1 className="text-4xl font-medium sm:text-5xl">
               Çevrenizde İşinize Uygun En Taze Yazılımcıları Bulun.
             </h1>
-            <h2 className="text-3xl">Fırından Taze Çıkmışlar.</h2>
+            <h2 className="text-2xl sm:text-3xl">Fırından Taze Çıkmışlar.</h2>
           </div>
           {/* <Image src={sengineer} alt="test"></Image> */}
           <img
             src="/undraw_software_engineer_re_fyew-1.svg"
             alt="furnace"
-            className="w-2/6"
+            className="hidden w-2/6 sm:block"
           />
         </section>
       </section>
       <section className="container flex flex-col pb-10 mx-auto space-y-16">
-        <h1 className="text-5xl text-indigo-600">Açık Pozisyonlar</h1>
-        <div className="grid gap-12 sm:grid-cols-4">
+        <h1 className="text-4xl text-indigo-600 sm:text-5xl mobile-margin">
+          Açık Pozisyonlar
+        </h1>
+        <div className="grid gap-12 sm:grid-cols-4 mobile-margin">
           {companies.map((c, i) => {
             return (
               <JobCard

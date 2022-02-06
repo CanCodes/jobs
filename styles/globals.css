@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.sexy-flip {
-  transform: scaleX(-1);
+.mobile-margin {
+  @apply mx-2 sm:mx-0;
 }
