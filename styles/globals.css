@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .mobile-margin {
-  @apply mx-2 sm:mx-0;
+  @apply mx-2 xl:mx-2 2xl:mx-0;
 }

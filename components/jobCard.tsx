@@ -53,7 +53,7 @@ export function JobCard({ company, title, timeAndType }: JobCardProps) {
       </p>
       {status && (
         <div className="fixed top-0 left-0 z-10 flex w-full h-full bg-black/40">
-          <div className="relative flex flex-col self-center w-1/2 p-5 mx-auto space-y-4 bg-white rounded-lg dark:bg-indigo-900 h-1/2">
+          <div className="relative z-20 flex flex-col self-center w-1/2 p-5 mx-auto space-y-4 rounded-lg bg-white/95 dark:bg-indigo-900/95 h-1/2">
             <button
               className="absolute top-0 right-0 flex items-center justify-center w-12 h-12 rounded-tr-lg"
               onClick={(e) => {
