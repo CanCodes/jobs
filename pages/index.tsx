@@ -83,7 +83,7 @@ const companies: Company[] = [
 const Home: NextPage = () => {
   return (
     <main className="min-h-screen space-y-10 transition-colors sm:space-y-20 bg-indigo-50 dark:bg-indigo-900">
-      <section className="py-10 space-y-20 bg-indigo-500 dark:bg-indigo-700 h-1/2 bg-gradient-to-tr">
+      <section className="py-10 space-y-20 bg-indigo-700 h-1/2 bg-gradient-to-tr">
         <Header></Header>
         <section className="container flex flex-col items-center justify-between mx-auto text-white sm:mt-10 sm:flex-row">
           <div className="space-y-2 mobile-margin sm:w-1/2">

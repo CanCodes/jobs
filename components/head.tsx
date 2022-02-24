@@ -3,7 +3,7 @@ import Head from "next/head";
 export function SiteHead() {
   return (
     <Head>
-      <meta name="theme-color" content="#312e81" />
+      <meta name="theme-color" content="#4338ca" />
       <meta name="title" content="Fırın" />
       <meta
         name="description"
