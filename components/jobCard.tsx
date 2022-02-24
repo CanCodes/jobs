@@ -52,8 +52,8 @@ export function JobCard({ company, title, timeAndType }: JobCardProps) {
         {company.country}
       </p>
       {status && (
-        <div className="fixed top-0 left-0 z-10 flex w-full h-full bg-black/40">
-          <div className="relative z-20 flex flex-col self-center w-1/2 p-5 mx-auto space-y-4 rounded-lg bg-white/95 dark:bg-indigo-900/95 h-1/2">
+        <div className="fixed top-0 left-0 z-10 flex w-full h-full px-4 bg-black/40 lg:px-0">
+          <div className="relative z-20 flex flex-col self-center p-8 mx-auto bg-white rounded-lg lg:w-1/2 dark:bg-indigo-900">
             <button
               className="absolute top-0 right-0 flex items-center justify-center w-12 h-12 rounded-tr-lg"
               onClick={(e) => {
@@ -67,12 +67,12 @@ export function JobCard({ company, title, timeAndType }: JobCardProps) {
                 className="text-indigo-900 dark:text-white"
               ></FontAwesomeIcon>
             </button>
-            <section id="top" className="flex space-x-5">
+            <section id="top" className="flex mb-5 space-x-5">
               <div
                 style={{
                   backgroundColor: company.bgColor,
                 }}
-                className={`flex items-center justify-center w-24 h-24 rounded-lg ring-white dark:ring-indigo-700 ring-4 -top-12`}
+                className={`flex items-center justify-center w-20 h-20 rounded-lg ring-white dark:ring-indigo-700 ring-4 -top-12`}
               >
                 <FontAwesomeIcon
                   color={company.color}
