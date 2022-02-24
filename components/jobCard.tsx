@@ -52,7 +52,7 @@ export function JobCard({ company, title, timeAndType }: JobCardProps) {
         {company.country}
       </p>
       {status && (
-        <div className="fixed top-0 left-0 z-10 flex w-full h-full px-4 bg-black/40 lg:px-0">
+        <div className="fixed top-0 left-0 z-10 flex w-full h-full px-4 bg-black/50 lg:px-0">
           <div className="relative z-20 flex flex-col self-center p-8 mx-auto bg-white rounded-lg lg:w-1/2 dark:bg-indigo-900">
             <button
               className="absolute top-0 right-0 flex items-center justify-center w-12 h-12 rounded-tr-lg"
@@ -72,7 +72,7 @@ export function JobCard({ company, title, timeAndType }: JobCardProps) {
                 style={{
                   backgroundColor: company.bgColor,
                 }}
-                className={`flex items-center justify-center w-20 h-20 rounded-lg ring-white dark:ring-indigo-700 ring-4 -top-12`}
+                className={`flex items-center shrink-0 justify-center lg:w-20 lg:h-20 w-24 h-24 rounded-lg ring-white dark:ring-indigo-700 ring-4 -top-12`}
               >
                 <FontAwesomeIcon
                   color={company.color}
@@ -84,7 +84,7 @@ export function JobCard({ company, title, timeAndType }: JobCardProps) {
                 <h1 className="text-3xl font-medium text-indigo-700 dark:text-white">
                   {title}
                 </h1>
-                <p className="text-xl text-indigo-600 dark:text-white">
+                <p className="text-xl text-indigo-600 dark:text-white/80">
                   at {company.name}
                 </p>
               </div>
@@ -93,7 +93,7 @@ export function JobCard({ company, title, timeAndType }: JobCardProps) {
               <h1 className="text-2xl font-medium text-indigo-700 dark:text-white">
                 Pozisyon Hakkında
               </h1>
-              <p className="text-indigo-600 dark:text-white">
+              <p className="text-indigo-600 dark:text-white/80">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
                 cum nam neque? Enim earum quos expedita asperiores dolores
                 officiis modi magni aperiam! Ex amet aliquid possimus culpa
@@ -102,7 +102,7 @@ export function JobCard({ company, title, timeAndType }: JobCardProps) {
               <h1 className="mt-3 text-2xl font-medium text-indigo-700 dark:text-white">
                 Beklentiler
               </h1>
-              <p className="text-indigo-600 dark:text-white">
+              <p className="text-indigo-600 dark:text-white/80">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
                 cum nam neque? Enim earum quos expedita asperiores dolores
                 officiis modi magni aperiam! Ex amet aliquid possimus culpa
