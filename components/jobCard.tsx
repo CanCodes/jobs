@@ -27,7 +27,7 @@ export function JobCard({ company, title, timeAndType }: JobCardProps) {
   }
   return (
     <div
-      className="relative flex flex-col p-5 transition-colors bg-white rounded-md dark:bg-indigo-700"
+      className="relative flex flex-col p-5 transition-colors bg-white rounded-md shadow-md dark:bg-indigo-700"
       onClick={openModal}
     >
       {/* <img src="/twitter_social.png" alt="twitter" className="" />  */}
@@ -53,9 +53,16 @@ export function JobCard({ company, title, timeAndType }: JobCardProps) {
       </p>
       {status && (
         <div className="fixed top-0 left-0 z-10 flex w-full h-full px-4 bg-black/50 lg:px-0">
+          <div
+            className="min-h-screen bg-black/50 absolute w-full"
+            onClick={(e) => {
+              e.stopPropagation();
+              setStatus(false);
+            }}
+          />
           <div className="relative z-20 flex flex-col self-center p-8 mx-auto bg-white rounded-lg lg:w-1/2 dark:bg-indigo-900">
             <button
-              className="absolute top-0 right-0 flex items-center justify-center w-12 h-12 rounded-tr-lg"
+              className="absolute top-1 right-1 hover:bg-black/20 dark:hover:bg-white/20 rounded-md flex items-center justify-center w-12 h-12 rounded-tr-lg"
               onClick={(e) => {
                 e.stopPropagation();
                 setStatus(false);
