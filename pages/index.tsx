@@ -1,81 +1,71 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
+import { FaAmazon, FaApple, FaDiscord, FaFacebookF, FaGithub, FaGoogle, FaTwitch, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Header } from "../components/header";
 import { Company, JobCard } from "../components/jobCard";
-import {
-  faAmazon,
-  faApple,
-  faDiscord,
-  faFacebookF,
-  faGithub,
-  faGoogle,
-  faTwitch,
-  faTwitter,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
 
 const companies: Company[] = [
   {
     name: "Discord",
     bgColor: "#5865F2",
     color: "#ffffff",
-    icon: faDiscord,
+    icon: FaDiscord,
     country: "Japan",
   },
   {
     name: "Twitter",
     bgColor: "#1DA1F2",
     color: "#ffffff",
-    icon: faTwitter,
+    icon: FaTwitter,
     country: "United Kingdom",
   },
   {
     name: "Facebook",
     bgColor: "#5865F2",
     color: "#ffffff",
-    icon: faFacebookF,
+    icon: FaFacebookF,
     country: "United States",
   },
   {
     name: "Twitch",
     bgColor: "#9146FF",
     color: "#ffffff",
-    icon: faTwitch,
+    icon: FaTwitch,
     country: "United States",
   },
   {
     name: "Github",
     bgColor: "#000000",
     color: "#ffffff",
-    icon: faGithub,
+    icon: FaGithub,
     country: "United States",
   },
   {
     name: "Google",
     bgColor: "#0F9D58",
     color: "#ffffff",
-    icon: faGoogle,
+    icon: FaGoogle,
     country: "United States",
   },
   {
     name: "Apple",
     bgColor: "#000000",
     color: "#ffffff",
-    icon: faApple,
+    icon: FaApple,
     country: "United States",
   },
   {
     name: "Amazon",
     bgColor: "#FF9900",
     color: "#FFFFFF",
-    icon: faAmazon,
+    icon: FaAmazon,
     country: "Turkey",
   },
   {
     name: "Youtube",
     bgColor: "#FF0000",
     color: "#FFFFFF",
-    icon: faYoutube,
+    icon: FaYoutube,
     country: "Germany",
   },
 ];

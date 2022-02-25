@@ -1,7 +1,6 @@
-import { faHamburger, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { FaHamburger, FaMoon, FaSun } from "react-icons/fa";
 
 export function Header() {
   const [theme, setTheme] = useState<boolean>(false);
@@ -45,14 +44,13 @@ export function Header() {
             onClick={toggleTheme}
             className="w-10 h-10 bg-indigo-500 rounded-full"
           >
-            <FontAwesomeIcon icon={!theme ? faMoon : faSun} />
+            {!theme ? <FaMoon className="m-auto" /> : <FaSun className="m-auto" />}
           </button>
         </div>
-        <FontAwesomeIcon
+        <FaHamburger
           className="block sm:hidden"
-          icon={faHamburger}
-          size="2x"
-        ></FontAwesomeIcon>
+          size="2em"
+        />
       </nav>
     </header>
   );
