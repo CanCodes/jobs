@@ -1,16 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { faCross, faTimes } from "@fortawesome/free-solid-svg-icons";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import { IconType } from "react-icons/lib"
+import { FaTimes } from "react-icons/fa"
 
 export interface Company {
   name: string;
   color?: string;
   bgColor: string;
-  icon: IconProp;
+  icon: IconType;
   country: string;
 }
 
@@ -37,7 +34,7 @@ export function JobCard({ company, title, timeAndType }: JobCardProps) {
         }}
         className="absolute flex items-center justify-center w-16 h-16 rounded-2xl ring-white transition-colors dark:ring-indigo-700 ring-4 -top-8"
       >
-        <FontAwesomeIcon color={company.color} icon={company.icon} size="2x" />
+        <company.icon size="2em" color={company.color} />
       </div>
       <span className="mt-4 text-sm text-indigo-500 dark:text-white">
         {timeAndType}
@@ -61,11 +58,10 @@ export function JobCard({ company, title, timeAndType }: JobCardProps) {
                 setStatus(false);
               }}
             >
-              <FontAwesomeIcon
-                icon={faTimes}
-                size="lg"
+              <FaTimes
+                size="1.5em"
                 className="text-indigo-900 dark:text-white"
-              ></FontAwesomeIcon>
+              />
             </button>
             <section id="top" className="flex mb-5 space-x-5">
               <div
@@ -74,10 +70,9 @@ export function JobCard({ company, title, timeAndType }: JobCardProps) {
                 }}
                 className={`flex items-center shrink-0 justify-center lg:w-20 lg:h-20 w-24 h-24 rounded-lg ring-white dark:ring-indigo-700 ring-4 -top-12`}
               >
-                <FontAwesomeIcon
+                <company.icon
+                  size="2em"
                   color={company.color}
-                  icon={company.icon}
-                  size="3x"
                 />
               </div>
               <div className="flex flex-col">
